@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 
 @AutoConfiguration
-
+@ConditionalOnProperty(name = "memory", havingValue = "on")
 public class MemoryAutoConfig {
 
     @Bean
